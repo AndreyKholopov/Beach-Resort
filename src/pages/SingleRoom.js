@@ -62,8 +62,10 @@ export default class SingleRoom extends Component {
 
             <section className="single-room">
                <div className="single-room-images">
-                  {images.map((item, index) => {
-                     return <img key={index} src={item} item={name} />;
+                  {defaultImg.map((item, index) => {
+                     return (
+                        <img key={index} src={item} item={name} alt="roomImg" />
+                     );
                   })}
                </div>
 
